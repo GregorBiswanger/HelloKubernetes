@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: hellok8s
-          image: 'microservicesample.azurecr.io/gregorbiswanger/hellokubernetes:latest'
+          image: 'microservicesample.azurecr.io/gregorbiswanger/hellokubernetes:859'
           ports:
             - containerPort: 80
       restartPolicy: Always
