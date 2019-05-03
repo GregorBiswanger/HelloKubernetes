@@ -16,8 +16,6 @@ spec:
           image: 'microservicesample.azurecr.io/gregorbiswanger/hellokubernetes'
           ports:
             - containerPort: 80
-      imagePullSecrets:
-        - name: acr-auth
       restartPolicy: Always
   selector:
     matchLabels:
