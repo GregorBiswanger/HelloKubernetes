@@ -8,12 +8,13 @@ spec:
   replicas: 3
   template:
     metadata:
+      name: hellok8s
       labels:
         app: hellok8s
     spec:
       containers:
         - name: hellok8s
-          image: 'microservicesample.azurecr.io/gregorbiswanger/hellokubernetes:859'
+          image: 'hellok8s:1.0'
           ports:
             - containerPort: 80
       restartPolicy: Always
@@ -34,4 +35,4 @@ spec:
       targetPort: 80
   selector:
     app: hellok8s
-  type: LoadBalancer
+  type: NodePort
